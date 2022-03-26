@@ -1,0 +1,42 @@
+body{
+  background-image: url(hd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    color:black;
+   font-size: 40px;
+    
+}
+span
+{
+  font-size: 30px;
+}
+
+#gestures{
+border-radius: 15px;
+background-color: palevioletred;
+width:250px;
+}
+#camera 
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+  
+}
+#result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+  
+  
+}
+
+
+#prediction{
+  width: 150px;
+  height: 100px; 
+  text-align: center;
+  background-color:lightblue ;
+  border-radius:15px
+}

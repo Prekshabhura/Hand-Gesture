@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title> hand gestures app</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class="container">
+    <center>
+        <h1> TEST YOUR HAND GESTURES !!</h1>
+        <h2>LEARN NEW ONES TO COMMUNICATE WITH SPECIAL KIDS!!</h2>
+
+        <H3> Capture your image and get the results..</H3>
+        <P id="ptag"> This app can identify the following hand gestures</P>
+
+    </center>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color: hotpink;" id="gestures" >
+        <span>AWESOME &#128076 </span><br>
+        <span> KEEP IT UP&#128077</span><br>
+        <span> UP &#128070</span><br>
+        <span> DOWN &#128071</span><br>
+        <span> LEFT &#128072</span><br>
+        <span> RIGHT &#128073</span><br>
+        <span> COOL!! &#129304</span><br>
+        <span> VICTORY &#9996</span><br>
+        <span> HI &#9995</span><br>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+         <label> YOUR SNAP:</label><br>
+        <div id="camera"></div><br>
+        <button id="take_snapshot" class="btn btn-info" onclick="take_snapshot()"> TAKE PHOTO </button>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <label> CAPTURED IMAGE</label><br>
+        <div id="result"></div><br>
+        <button id="check" class="btn btn-info" onclick="check()"> CHECK PHOTO </button>
+    </div><br><br>
+    <div id="prediction"> <label>PREDICTION 1 </label>
+        <p class="emotion_name" id="result_emotion_name2"></p>
+        <p class="emoji" id="emoji_1"></p>
+        <label>PREDICTION 2</label>
+        <p class="emotion_name" id="result_emotion_name2"></p>
+        <p class="emoji" id="emoji_1"></p>
+    </div><br>
+
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
